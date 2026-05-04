@@ -17,3 +17,5 @@ This project delivers a caregiver-focused mobile assistant for individuals with 
 ## Reports
 - [Project Specification Document](reports/T2518_Project_Specification_Document.pdf)
 - [Analysis and Requirements Report](reports/T2518_Analysis_and_Requirements_Report.pdf)
+- [Detailed Design Report](reports/T2518_Detailed_Design_Report.pdf)
+- [Final Report](reports/T2518_Final_Report.pdf)
