@@ -401,11 +401,11 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
 
 .hero-meta {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   padding-top: 28px;
   border-top: 1px solid var(--rule);
-  max-width: 640px;
+  max-width: 480px;
 }
 .hero-meta li {
   display: flex; flex-direction: column; gap: 4px;
