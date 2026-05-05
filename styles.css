@@ -372,9 +372,8 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   line-height: 0.82;
   letter-spacing: -0.045em;
   color: var(--ink);
-  text-transform: uppercase;
-  /* Use available width without overflow; the word "REMIND" is 6 chars
-     so 19vw lands around 1080px on a 1280-wide wrap, leaving comfortable margin. */
+  /* Mixed-case ReMind wordmark — no text-transform so the M stays capital
+     and the e/i/n/d stay lowercase as the canonical project spelling. */
 }
 
 .hero-tagline {
@@ -1333,7 +1332,6 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   font-weight: 900;
   font-size: clamp(1.75rem, 3vw, 2.25rem);
   letter-spacing: -0.02em;
-  text-transform: uppercase;
   display: block;
   color: var(--ink);
 }
