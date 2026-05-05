@@ -1129,18 +1129,6 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   max-width: 38ch;
 }
 
-.privacy-coda {
-  margin-top: clamp(48px, 6vw, 72px);
-  padding-top: 24px;
-  border-top: 1.5px solid var(--rule);
-  font-family: var(--mono);
-  font-size: var(--fs-xs);
-  line-height: 1.6;
-  letter-spacing: .04em;
-  color: var(--ink-mute);
-  max-width: 64ch;
-}
-
 @media (max-width: 760px) {
   .privacy-list { grid-template-columns: 1fr; }
 }
