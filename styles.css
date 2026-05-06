@@ -551,6 +551,70 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   .hero-meta { grid-template-columns: 1fr; }
 }
 
+/* ────────── 6.5. Product demo (video) ────────── */
+.demo {
+  padding: clamp(40px, 6vw, 96px) 0 clamp(56px, 7vw, 110px);
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.demo-header {
+  max-width: 760px;
+  margin: 0 auto clamp(28px, 4vw, 48px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.demo-h2 { margin: 0; }
+.demo-sub { margin: 0; max-width: 56ch; }
+
+.demo-figure {
+  margin: 0;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.demo-frame {
+  position: relative;
+  background: var(--bg-3);
+  border: 1px solid var(--rule-2);
+  padding: 6px;
+  /* Subtle accent corners — nod to the FIG-tag aesthetic */
+  box-shadow:
+    -3px -3px 0 var(--cyan),
+    3px 3px 0 var(--lime);
+  transition: box-shadow .35s var(--ease-out), transform .35s var(--ease-out);
+}
+.demo-frame:hover {
+  box-shadow:
+    -5px -5px 0 var(--cyan),
+    5px 5px 0 var(--lime);
+}
+.demo-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  /* Native controls; on mobile, playsinline + controls is the safe default. */
+}
+.demo-cap {
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: var(--fs-cap);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .demo-frame { padding: 4px; box-shadow: -2px -2px 0 var(--cyan), 2px 2px 0 var(--lime); }
+  .demo-frame:hover { box-shadow: -3px -3px 0 var(--cyan), 3px 3px 0 var(--lime); }
+}
+
 /* ────────── 7. Overview band ────────── */
 .overview {
   padding: clamp(56px, 7vw, 110px) 0;
