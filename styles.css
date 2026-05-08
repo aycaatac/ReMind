@@ -1306,6 +1306,30 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   text-transform: uppercase;
   color: var(--ink);
 }
+.t-mail {
+  font-family: var(--mono);
+  font-size: var(--fs-xs);
+  letter-spacing: .04em;
+  color: var(--ink-mute);
+  text-decoration: none;
+  justify-self: end;
+  white-space: nowrap;
+  transition: color .25s var(--ease-out);
+}
+.t-mail:hover,
+.t-mail:focus-visible { color: var(--cyan); }
+@media (max-width: 720px) {
+  .team-list li {
+    grid-template-columns: 48px 1fr;
+    row-gap: 6px;
+  }
+  .t-mail {
+    grid-column: 2 / -1;
+    justify-self: start;
+    white-space: normal;
+    word-break: break-all;
+  }
+}
 .team-coda {
   margin-top: 36px;
   font-family: var(--mono);
